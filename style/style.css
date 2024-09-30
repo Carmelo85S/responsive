@@ -1,0 +1,128 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*General*/
+a,
+p{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    color:#242635;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover{
+    color: #7c481f;
+}
+
+h1{
+    font-family:"Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 6.3rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.j-between{
+    justify-content: space-between;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.m-0-10{
+    margin:auto 10px;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.tc{
+    text-align: center;
+}
+
+/*Nav*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.navigation{
+    max-width: 864px;
+    width: 100%;
+    min-height: 60px;
+    align-items: flex-end;
+}
+
+svg{
+    font-family: 'Aldrich', sans-serif;
+}
+
+.list{
+    max-width: 267px;
+    width: 100%;
+    min-height: 60px;
+    gap:28px;
+    align-items: flex-end ;
+}
+
+/*Content*/
+
+.content__container{
+    max-width: 574px;
+    width: 100%;
+    min-height: 198px;
+    justify-content:end;
+    margin-bottom: 30px;
+}
+
+.content__container-info{
+    font-size: 22px;
+    line-height: 33px;
+}
+
+/*tablet*/
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 72px;
+        line-height: 5.1rem;
+    }
+    
+    svg{
+        font-family: "Baloo 2", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .navigation{
+        max-width: 617px;
+    }
+
+    .content__container{
+        min-height: 171px;
+        justify-content:end;
+        margin-bottom: 30px;
+    }
+}

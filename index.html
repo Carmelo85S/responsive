@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Responsive Patagonia</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navigation flex j-between m-0-10">
+            <svg width="300" height="60" xmlns="http://www.w3.org/2000/svg">
+                <text x="25" y="55" text-anchor="middle" fill="black">
+                    HEAD.
+                </text>
+            </svg>
+            <div class="list flex">
+                <a href="#">Work</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Content-->
+    <section class="content__container flex a-center col m-auto">
+        <h1 class="tc">
+            Patagonia
+        </h1>
+        <p class="content__container-info tc">
+            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+             Donec viverra eleifend lacus, vitae ullamcor.
+        </p>
+    </section>
+    <section class="flex j-center">
+        <picture>
+            <source media="(max-width: 320px)" srcset="image/Image-s.jpg">
+            <source media="(max-width: 768px)" srcset="image/Image-m.jpg">
+            <source media="(min-width: 1040px)" srcset="image/Image-l.jpg">
+            <img src="image/Image-l.jpg" alt="wild horses">
+        </picture>
+    </section>
 </body>
 </html>
