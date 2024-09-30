@@ -87,6 +87,12 @@ svg{
     align-items: flex-end ;
 }
 
+.menu{
+    font-weight: 900;
+    font-size:90px;
+    display: none;
+}
+
 /*Content*/
 
 .content__container{
@@ -105,15 +111,16 @@ svg{
 /*tablet*/
 
 @media screen and (max-width: 768px){
-    h1{
-        font-size: 72px;
-        line-height: 5.1rem;
-    }
     
     svg{
         font-family: "Baloo 2", sans-serif;
         font-weight: bold;
         font-style: normal;
+    }
+
+    h1{
+        font-size: 72px;
+        line-height: 5.1rem;
     }
 
     .navigation{
@@ -125,4 +132,45 @@ svg{
         justify-content:end;
         margin-bottom: 30px;
     }
+
+    .content__container-info{
+        max-width: 573px;
+        min-height: 66px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 33px;
+    }
+}
+
+/*Smartphone*/
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 36px;
+        line-height: 39px;
+    }
+
+    .navigation {
+        max-width: 258px;
+        width: 100%;
+        min-height: 36px;
+    }
+
+    .navigation > .list {
+        display: none;
+    }
+
+    .menu{
+        display:flex;
+    }
+
+    .content__container-info{
+        max-width: 217px;
+        min-height: 49px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
 }
